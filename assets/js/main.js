@@ -152,6 +152,8 @@
       });
     });
 
+    
+
     isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(filters) {
       filters.addEventListener('click', function() {
         isotopeItem.querySelector('.isotope-filters .filter-active').classList.remove('filter-active');
@@ -166,6 +168,34 @@
     });
 
   });
+
+  // document.addEventListener('DOMContentLoaded', function() {
+  //   // Inisialisasi Isotope setelah gambar dimuat
+  //   var grid = document.querySelector('.isotope-container');
+  //   var iso;
+  
+  //   imagesLoaded(grid, function() {
+  //     iso = new Isotope(grid, {
+  //       itemSelector: '.isotope-item',
+  //       layoutMode: 'masonry'
+  //     });
+  //   });
+  
+  //   // Filter event listener
+  //   var filtersElem = document.querySelector('.portfolio-filters');
+  //   filtersElem.addEventListener('click', function(event) {
+  //     if (!event.target.matches('li')) {
+  //       return;
+  //     }
+  //     var filterValue = event.target.getAttribute('data-filter');
+  //     iso.arrange({ filter: filterValue });
+  
+  //     // Update active class
+  //     document.querySelector('.filter-active').classList.remove('filter-active');
+  //     event.target.classList.add('filter-active');
+  //   });
+  // });
+  
 
   /**
    * Init swiper sliders
